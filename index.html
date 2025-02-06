@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online code editor</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="inp">
+                    <div class="lang">
+                        <h1 class="m"></h1>
+                        <label>
+                            <i class="fa-brands fa-html5"></i>
+                            HTML
+                        </label>
+                    </div>
+                    <textarea onkeyup="run()" class="html-code"></textarea>
+                </div>
+
+                <div class="inp">
+                    <div class="lang">
+                        <h1 class="m"></h1>
+                        <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                    </div>
+                    <textarea onkeyup="run()" class="css-code"></textarea>
+                </div>
+
+                <div class="inp">
+                    <div class="lang">
+                        <h1 class="m"></h1>
+                        <label><i class="fa-brands fa-js"></i>JavaScript</label>
+                    </div>
+                    <textarea onkeyup="run()" class="js-code"></textarea>
+                </div>
+            </div>
+            <div class="right">
+                <label
+                    ><i class="fa-duotone fa-square-poll-horizontal"></i
+                ></label>
+                <iframe class="output"></iframe>
+            </div>
+        </div>
+    </body>
+    <script
+        src="https://kit.fontawesome.com/e0c2920062.js"
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</html>
